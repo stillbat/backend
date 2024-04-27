@@ -16,6 +16,11 @@ const usersJson = require("./users.json");
 const JWT_SECRET = "blablabla-secret";
 myServer.use(express.json());
 myServer.use(cors());
+myServer.get("/", (req,res) => {res.send("working")});
+
+
+
+
 
 myServer.post("/login", async (req, res) => {
   const { email, password } = req.body;
