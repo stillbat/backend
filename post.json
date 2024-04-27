@@ -1,0 +1,16 @@
+[
+    {
+      "id": "1",
+      "text": "This is very nice post",
+      "likes": 0,
+      "createdAt": "Now",
+      "owner": "1"
+    },
+    {
+        "id": "2",
+      "text": "This is very bad post",
+      "likes": 0,
+      "createdAt": "nownow",
+      "owner": "12"
+    }
+  ]
