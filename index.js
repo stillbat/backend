@@ -39,7 +39,7 @@ myServer.post("/login", async (req, res) => {
     if (isMatching) {
       const token = jwt.sign({ id: user._id.toString() }, JWT_SECRET, {
         algorithm: "HS256",
-        expiresIn: "1h",
+        expiresIn: "2m",
       });
       res.json(token);
       return;
@@ -77,7 +77,7 @@ myServer.post("/register", async (req, res) => {
     const token = jwt.sign(
       { id: specificdata.insertedId.toString() },
       JWT_SECRET,
-      { algorithm: "HS256", expiresIn: "1h" }
+      { algorithm: "HS256", expiresIn: "2m" }
     );
     res.json(token);
     return;
